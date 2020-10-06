@@ -28,4 +28,3 @@ $ npm run start
 Github:
 - Anderfilth
 - Fernanda-sayuri
-
