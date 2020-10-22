@@ -1,0 +1,72 @@
+.card{
+  padding: 15px;
+  background-color: #c5c5c5;
+  color: #FFF;
+  border-radius: 15px;
+  width: 300px;
+}
+.card img{
+  width: 100%;
+  max-width: 180px;
+}
+.card h1{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.card span{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 5px 12px;
+  display: inline-block;
+  margin: 7px;
+  margin-left: 0;
+}
+.row{
+  display: flex;
+}
+.col{
+  flex-direction: row;
+}
+.card--color--water{
+  background-color: #77C4FE;
+}
+.card--color--poison{
+  background-color: #7C538C;
+}
+.card--color--grass{
+  background-color: #4FC1A6;
+}
+.card--color--electric{
+  background-color: #FFCE4B;
+}
+.card--color--rock{
+  background-color: #B1736C;
+}
+.card--color--dark{
+  background-color: #565669;
+}
+.card--color--flying{
+  background-color: #cdcde6;
+}
+.card--color--dragon{
+  background-color: #f7af5a;
+}
+.card--color--bug{
+  background-color: #92df68;
+}
+.card--color--ground{
+  background-color: #be7447;
+}
+.card--color--psychic{
+  background-color: #405483;
+}
+.card--color--fighting{
+  background-color: #a2a29b;
+}
+.card--color--ghost{
+  background-color: #9473b4;
+}
+.card--color--ice{
+  background-color: #a4def6;
+}
