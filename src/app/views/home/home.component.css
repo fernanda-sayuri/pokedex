@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  padding: 1rem;
+}
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.list-pokemon {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin: 10px 0px;
+}
+@media(max-width: 600px){
+  .list-pokemon{
+    display: block;
+  }
+}
+@media(min-width: 1000px){
+  .list-pokemon{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

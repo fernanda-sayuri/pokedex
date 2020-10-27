@@ -1,9 +1,12 @@
+
 .card{
   padding: 15px;
   background-color: #c5c5c5;
   color: #FFF;
   border-radius: 15px;
-  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  filter: saturate(1.7);
 }
 .card img{
   width: 100%;
@@ -12,21 +15,39 @@
 .card h1{
   font-weight: bold;
   font-size: 1.3em;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
-.card span{
+.card-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-info span {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.card-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.types-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+.types-list .small {
+  flex-direction: column;
+  margin-top: 0px;
+}
+.types-list span{
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   padding: 5px 12px;
   display: inline-block;
   margin: 7px;
   margin-left: 0;
-}
-.row{
-  display: flex;
-}
-.col{
-  flex-direction: row;
 }
 .card--color--water{
   background-color: #77C4FE;
