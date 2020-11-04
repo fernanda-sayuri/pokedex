@@ -1,18 +1,17 @@
-<section class="card card--color--grass">
+<section [ngClass]="['card', colorClass]">
 
   <div class="card-info">
     <div>
-      <h1>Bulbasaur</h1>
-      <span>#001</span>
+      <h1>{{ name }}</h1>
+      <span></span>
     </div>
     <div class="types-list small">
-      <span>Grass</span>
-      <span>Poison</span>
+      <span *ngFor="let type of types">{{ type }}</span>
     </div>
   </div>
   <div class="card-thumb">
     <picture>
-      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur">
+      <img [src]="image" [alt]="name">
     </picture>
   </div>
 
