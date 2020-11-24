@@ -55,10 +55,10 @@ const getColorClass = function(type:string){
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() name='Bulbasaur';
-  @Input() number='#001';
-  @Input() types=['Grass','Poison'];
-  @Input() image='https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png';
+  @Input() name:string;
+  @Input() number:string;
+  @Input() types:[string,string] = ["grass", "poison"];
+  @Input() image:string;
 
   colorClass = getColorClass(this.types[0].toLowerCase());
 
