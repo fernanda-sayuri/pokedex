@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PokedexServiceService } from '../service/pokedex-service.service';
 
 const getColorClass = function(type:string){
   switch (type) {
@@ -62,9 +63,14 @@ export class CardComponent implements OnInit {
 
   colorClass = getColorClass(this.types[0].toLowerCase());
 
-  constructor() { }
+  private pokemons:any;
+
+  constructor(private pokemonService: PokedexServiceService) {
+
+  }
 
   ngOnInit(): void {
+    this.pokemonService.getPokemons().subscribe(data => this.pokemons = data.pokemon);
   }
 
 }

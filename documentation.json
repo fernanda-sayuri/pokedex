@@ -368,12 +368,12 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Default",
+                "name": "Bulbasaur",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/card/card.story.ts",
+                "file": "src/app/card/card.stories.ts",
                 "type": "",
-                "defaultValue": "() =>({\n  component:CardComponent, props:{name, number, types, image}\n})"
+                "defaultValue": "() =>({\n  component:CardComponent,\n  props:{\n    name: object('name', name ),\n    number,\n    types,\n    image\n  }\n})"
             },
             {
                 "name": "environment",
@@ -403,9 +403,25 @@
                 "name": "image",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/card/card.story.ts",
+                "file": "src/app/card/card.stories.ts",
                 "type": "string",
                 "defaultValue": "\"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png\""
+            },
+            {
+                "name": "image2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/card/card.stories.ts",
+                "type": "string",
+                "defaultValue": "\"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png\""
+            },
+            {
+                "name": "Ivysaur",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/card/card.stories.ts",
+                "type": "",
+                "defaultValue": "() =>({\n  component:CardComponent, props:{ name:name2, number:number2, types:types2, image:image2 }\n})"
             },
             {
                 "name": "mock",
@@ -419,23 +435,47 @@
                 "name": "name",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/card/card.story.ts",
+                "file": "src/app/card/card.stories.ts",
                 "type": "string",
                 "defaultValue": "\"Bulbasaur\""
+            },
+            {
+                "name": "name2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/card/card.stories.ts",
+                "type": "string",
+                "defaultValue": "\"Ivysaur\""
             },
             {
                 "name": "number",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/card/card.story.ts",
+                "file": "src/app/card/card.stories.ts",
                 "type": "string",
                 "defaultValue": "\"#001\""
+            },
+            {
+                "name": "number2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/card/card.stories.ts",
+                "type": "string",
+                "defaultValue": "\"#002\""
             },
             {
                 "name": "types",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/card/card.story.ts",
+                "file": "src/app/card/card.stories.ts",
+                "type": "[]",
+                "defaultValue": "[\"grass\", \"poison\"]"
+            },
+            {
+                "name": "types2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/card/card.stories.ts",
                 "type": "[]",
                 "defaultValue": "[\"grass\", \"poison\"]"
             }
@@ -444,44 +484,84 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/app/card/card.story.ts": [
+            "src/app/card/card.stories.ts": [
                 {
-                    "name": "Default",
+                    "name": "Bulbasaur",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/card/card.story.ts",
+                    "file": "src/app/card/card.stories.ts",
                     "type": "",
-                    "defaultValue": "() =>({\n  component:CardComponent, props:{name, number, types, image}\n})"
+                    "defaultValue": "() =>({\n  component:CardComponent,\n  props:{\n    name: object('name', name ),\n    number,\n    types,\n    image\n  }\n})"
                 },
                 {
                     "name": "image",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/card/card.story.ts",
+                    "file": "src/app/card/card.stories.ts",
                     "type": "string",
                     "defaultValue": "\"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png\""
+                },
+                {
+                    "name": "image2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/card/card.stories.ts",
+                    "type": "string",
+                    "defaultValue": "\"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png\""
+                },
+                {
+                    "name": "Ivysaur",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/card/card.stories.ts",
+                    "type": "",
+                    "defaultValue": "() =>({\n  component:CardComponent, props:{ name:name2, number:number2, types:types2, image:image2 }\n})"
                 },
                 {
                     "name": "name",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/card/card.story.ts",
+                    "file": "src/app/card/card.stories.ts",
                     "type": "string",
                     "defaultValue": "\"Bulbasaur\""
+                },
+                {
+                    "name": "name2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/card/card.stories.ts",
+                    "type": "string",
+                    "defaultValue": "\"Ivysaur\""
                 },
                 {
                     "name": "number",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/card/card.story.ts",
+                    "file": "src/app/card/card.stories.ts",
                     "type": "string",
                     "defaultValue": "\"#001\""
+                },
+                {
+                    "name": "number2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/card/card.stories.ts",
+                    "type": "string",
+                    "defaultValue": "\"#002\""
                 },
                 {
                     "name": "types",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/card/card.story.ts",
+                    "file": "src/app/card/card.stories.ts",
+                    "type": "[]",
+                    "defaultValue": "[\"grass\", \"poison\"]"
+                },
+                {
+                    "name": "types2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/card/card.stories.ts",
                     "type": "[]",
                     "defaultValue": "[\"grass\", \"poison\"]"
                 }
@@ -596,17 +676,17 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/card/card.story.ts",
+                "filePath": "src/app/card/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "Bulbasaur",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/app/card/card.story.ts",
+                "filePath": "src/app/card/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -616,7 +696,27 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/card/card.story.ts",
+                "filePath": "src/app/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "image2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Ivysaur",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/card/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -626,7 +726,17 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/card/card.story.ts",
+                "filePath": "src/app/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "name2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/card/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -636,11 +746,31 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/card/card.story.ts",
+                "filePath": "src/app/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "number2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/card/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "types",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "types2",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

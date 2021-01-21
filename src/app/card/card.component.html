@@ -1,18 +1,18 @@
-<section [ngClass]="['card', colorClass]">
-
-  <div class="card-info">
-    <div>
-      <h1>{{ name }}</h1>
-      <span></span>
+<div *ngFor="let pokemon of pokemons">
+  <section [ngClass]="['card', colorClass]">
+    <div class="card-info">
+      <div>
+        <h1>{{ pokemon.name }}</h1>
+        <span></span>
+      </div>
+      <div class="types-list small">
+        <span *ngFor="let type of types">{{ pokemon.type }}</span>
+      </div>
     </div>
-    <div class="types-list small">
-      <span *ngFor="let type of types">{{ type }}</span>
+    <div class="card-thumb">
+      <picture>
+        <img [src]="pokemon.img" [alt]="name">
+      </picture>
     </div>
-  </div>
-  <div class="card-thumb">
-    <picture>
-      <img [src]="image" [alt]="name">
-    </picture>
-  </div>
-
-</section>
+  </section>
+</div>
