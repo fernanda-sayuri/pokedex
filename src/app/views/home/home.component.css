@@ -13,7 +13,7 @@
   grid-column-gap: 10px;
   margin: 10px 0px;
 }
-@media(max-width: 600px){
+@media(max-width: 600px){ /* deixar responsivo */
   .list-pokemon{
     display: block;
   }

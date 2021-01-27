@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   filter: saturate(1.7);
+  margin-bottom: 10px;
 }
 .card img{
   width: 100%;
@@ -48,6 +49,12 @@
   display: inline-block;
   margin: 7px;
   margin-left: 0;
+}
+.card--color--fire{
+  background-color: #ff836a;
+}
+.card--color--normal{
+  background-color:#a8a8a8;
 }
 .card--color--water{
   background-color: #77C4FE;

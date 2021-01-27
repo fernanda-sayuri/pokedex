@@ -1,6 +1,10 @@
 <main class="container">
   <h1>Pokedex</h1>
   <section class="list-pokemon">
-    <app-card></app-card>
+    <div *ngFor="let pokemon of pokemons">
+      <app-card [name]=pokemon.name [number]=pokemon.num
+                [types]=pokemon.type [image]=pokemon.img>
+      </app-card>
+    </div>
   </section>
 </main>

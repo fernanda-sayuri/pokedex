@@ -1,8 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PokedexServiceService } from '../service/pokedex-service.service';
 
 const getColorClass = function(type:string){
   switch (type) {
+    case 'fire':
+      return "card--color--fire"
+    case 'normal':
+      return "card--color--normal"
+
     case 'water':
       return "card--color--water"
 
@@ -58,19 +62,18 @@ const getColorClass = function(type:string){
 export class CardComponent implements OnInit {
   @Input() name:string;
   @Input() number:string;
-  @Input() types:[string,string] = ["grass", "poison"];
+  @Input() types:string[];
   @Input() image:string;
 
-  colorClass = getColorClass(this.types[0].toLowerCase());
+  constructor() { }
 
-  private pokemons:any;
-
-  constructor(private pokemonService: PokedexServiceService) {
-
-  }
+  public colorClass = '';
 
   ngOnInit(): void {
-    this.pokemonService.getPokemons().subscribe(data => this.pokemons = data.pokemon);
+    if(this.types.length > 0){
+        this.colorClass = getColorClass(this.types[0].toLowerCase());
+    }
+
   }
 
 }
