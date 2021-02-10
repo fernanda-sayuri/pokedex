@@ -1,25 +1,23 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { render } from '@testing-library/angular';
 import { CardComponent } from './card.component';
 
-describe('CardComponent', () => {
-  let component: CardComponent;
-  let fixture: ComponentFixture<CardComponent>;
+describe('Irá testar CardComponent', () => {
+  it('Renderizar nome, tipo e imagem do Pokemon', async () => {
+    const name = "Bulbasaur";
+    const types = ["grass", "poison"];
+    const image = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png";
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
-    })
-    .compileComponents();
-  }));
+    const card = await render(CardComponent, {
+      componentProperties: {
+        name,
+        types,
+        image
+      }
+    });
+    const component = card.fixture.componentInstance;
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    expect(component.name).toBe('Bulbasaur');
+
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
