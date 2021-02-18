@@ -1,7 +1,9 @@
 # Pokedex
 
-### Descrição do Projeto
+## Descrição do Projeto
 Desenvolvimento de uma aplicação Angular com o objetivo de criar um "Pokedex", uma enciclopédia virtual portátil de alta tecnologia que os treinadores Pokémon transportam para registrar e consultar as espécies diferentes de Pokémon que são encontradas.
+
+![](https://github.com/fernanda-sayuri/pokedex/blob/feature/new-readme/img/Screenshot_1.png?raw=true)
 
 ### Status
 Em construção.
